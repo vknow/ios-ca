@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Vinoth. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="559" width="561" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="PgT-MK-ip3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="web_hi_res_512.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-dT-7gN">
+                    <rect key="frame" x="180" y="180" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="CDL-1O-5bn"/>
+                        <constraint firstAttribute="width" constant="240" id="NaT-2X-CPK"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="WN3-3z-GsU"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="v3Y-Ti-ZT4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app is subjected to market risk please dont trust Vinoth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRD-ji-X4n">
+                    <rect key="frame" x="8" y="404" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="C9I-5H-Qe4"/>
+                        <constraint firstAttribute="width" constant="584" id="dN0-Ih-O04"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="10"/>
+                    <color key="textColor" red="0.99087891067021927" green="0.95630388199604466" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.36862745098039218" green="0.65098039215686276" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.22745099660000001" green="0.65098041299999998" blue="0.8980392814" alpha="0.67000000000000004" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="fRD-ji-X4n" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="8z1-oe-rot"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="Ohf-dT-7gN" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="V0z-2q-JSc"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="Ohf-dT-7gN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="fGy-yG-saB"/>
+                <constraint firstItem="fRD-ji-X4n" firstAttribute="bottom" secondItem="Ohf-dT-7gN" secondAttribute="bottom" constant="5" id="ljc-WW-zDO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="web_hi_res_512.png" width="512" height="512"/>
+    </resources>
+</document>

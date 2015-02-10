@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84137924-9405-479E-B562-63EE8842F3ED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosca_test2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6408B4DAB968DF9B0FBAFB58A8B664DE7DA3A681</key>
+		<string>https://github.com/vinothmit/iosca_test2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosca_test2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6408B4DAB968DF9B0FBAFB58A8B664DE7DA3A681</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vinothmit/iosca_test2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6408B4DAB968DF9B0FBAFB58A8B664DE7DA3A681</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6408B4DAB968DF9B0FBAFB58A8B664DE7DA3A681</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosca_test2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
