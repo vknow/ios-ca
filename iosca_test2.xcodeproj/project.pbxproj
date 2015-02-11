@@ -11,6 +11,8 @@
 		3F181ACE1A870D61005B3AA0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F181ACD1A870D61005B3AA0 /* Social.framework */; };
 		3F33A5D81A89F840008B0D46 /* FullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33A5D71A89F840008B0D46 /* FullView.swift */; };
 		3F33A5DC1A8A128F008B0D46 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F33A5DB1A8A128F008B0D46 /* 1.mp3 */; };
+		3F5737091A8B1C4100FA4140 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5737071A8B1C4100FA4140 /* twitter.png */; };
+		3F57370A1A8B1C4100FA4140 /* fb_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5737081A8B1C4100FA4140 /* fb_icon.png */; };
 		3F7625061A8789DE0019A25F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7625051A8789DE0019A25F /* Images.xcassets */; };
 		3F76250C1A8790150019A25F /* ic_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F76250B1A8790150019A25F /* ic_search.png */; };
 		3F76250E1A8793130019A25F /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F76250D1A8793130019A25F /* nav_back.png */; };
@@ -53,6 +55,8 @@
 		3F181ACD1A870D61005B3AA0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3F33A5D71A89F840008B0D46 /* FullView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullView.swift; sourceTree = "<group>"; };
 		3F33A5DB1A8A128F008B0D46 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		3F5737071A8B1C4100FA4140 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		3F5737081A8B1C4100FA4140 /* fb_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb_icon.png; sourceTree = "<group>"; };
 		3F7625051A8789DE0019A25F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F76250B1A8790150019A25F /* ic_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_search.png; sourceTree = "<group>"; };
 		3F76250D1A8793130019A25F /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
@@ -106,9 +110,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5737061A8B047900FA4140 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3F33A5DB1A8A128F008B0D46 /* 1.mp3 */,
+				3F90AAB81A891A77006CE466 /* 3.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
 		3F90AAAC1A891041006CE466 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				3F5737071A8B1C4100FA4140 /* twitter.png */,
+				3F5737081A8B1C4100FA4140 /* fb_icon.png */,
 				3F90AAA41A888C46006CE466 /* twittershare.png */,
 				3F90AAA51A888C46006CE466 /* fbshare.png */,
 				3F76250F1A8795710019A25F /* nav_bar_ipad.png */,
@@ -199,13 +214,12 @@
 		3FD376EE1A83D9880047A916 /* iosca_test2 */ = {
 			isa = PBXGroup;
 			children = (
-				3F33A5DB1A8A128F008B0D46 /* 1.mp3 */,
-				3F90AAB81A891A77006CE466 /* 3.mp3 */,
+				3FD376F11A83D9880047A916 /* AppDelegate.swift */,
+				3F5737061A8B047900FA4140 /* Sound */,
 				3F90AAAC1A891041006CE466 /* Pic */,
 				3F90AAAD1A89104D006CE466 /* Custom Cells */,
 				3F90AAAE1A891062006CE466 /* Search View */,
 				3F92300C1A84775400A6C6BE /* Model Class */,
-				3FD376F11A83D9880047A916 /* AppDelegate.swift */,
 				3F90AAB11A8910BD006CE466 /* Bridges */,
 				3F90AAB01A89109F006CE466 /* Downloaded Image View */,
 				3F90AAAF1A891081006CE466 /* Favourite View */,
@@ -326,11 +340,13 @@
 				3FD376F71A83D9880047A916 /* Main.storyboard in Resources */,
 				3F90AAA71A888C46006CE466 /* fbshare.png in Resources */,
 				3F90AAA61A888C46006CE466 /* twittershare.png in Resources */,
+				3F57370A1A8B1C4100FA4140 /* fb_icon.png in Resources */,
 				3F76250C1A8790150019A25F /* ic_search.png in Resources */,
 				3F90AAB91A891A77006CE466 /* 3.mp3 in Resources */,
 				3FD376FC1A83D9880047A916 /* LaunchScreen.xib in Resources */,
 				3F7625061A8789DE0019A25F /* Images.xcassets in Resources */,
 				3F7625101A8795710019A25F /* nav_bar_ipad.png in Resources */,
+				3F5737091A8B1C4100FA4140 /* twitter.png in Resources */,
 				3F76250E1A8793130019A25F /* nav_back.png in Resources */,
 				3FD330A21A86168F00985B97 /* web_hi_res_512.png in Resources */,
 			);

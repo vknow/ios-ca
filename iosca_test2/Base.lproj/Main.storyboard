@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3X-Qq-mY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="300"/>
+            <point key="canvasLocation" x="968" y="302"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="51k-Os-Wll">
@@ -202,27 +202,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uho-Js-zwQ">
-                            <size key="itemSize" width="257" height="254"/>
+                            <size key="itemSize" width="274" height="251"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="8rR-F0-MV7" customClass="SavedImageCollectionViewCell" customModule="iosca_test2" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="imageCell" id="8rR-F0-MV7" customClass="SavedImageCollectionViewCell" customModule="iosca_test2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="257" height="254"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="274" height="251"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="39B-bJ-crM">
-                                            <rect key="frame" x="8" y="8" width="241" height="237"/>
+                                            <rect key="frame" x="8" y="8" width="258" height="235"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <size key="customSize" width="257" height="254"/>
+                                <size key="customSize" width="274" height="251"/>
                                 <connections>
                                     <outlet property="_image" destination="39B-bJ-crM" id="XgS-2U-KXe"/>
                                     <segue destination="HXU-vk-B6T" kind="push" identifier="editimage" id="58C-UJ-bCe"/>
@@ -264,7 +264,7 @@
             </objects>
             <point key="canvasLocation" x="1074" y="921"/>
         </scene>
-        <!--Favourite Table View Controller-->
+        <!--Favourites-->
         <scene sceneID="Nxw-n0-XZI">
             <objects>
                 <tableViewController id="5Gi-lw-Qte" customClass="FavouriteTableViewController" customModule="iosca_test2" customModuleProvider="target" sceneMemberID="viewController">
@@ -303,7 +303,7 @@
                             <outlet property="delegate" destination="5Gi-lw-Qte" id="XUl-LW-AFr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Z4F-jo-OJt"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="Z4F-jo-OJt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqK-im-UgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,7 +341,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Comment" minimumFontSize="12" id="8xl-Sz-2eK">
                                                 <rect key="frame" x="97" y="365" width="232" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -356,18 +356,20 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Si2-bA-1S8">
-                                                <rect key="frame" x="97" y="378" width="119" height="74"/>
+                                                <rect key="frame" x="130" y="405" width="41" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" backgroundImage="fbshare.png">
+                                                <state key="normal" image="fb_icon.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="fbshare:" destination="xF7-em-Ypg" eventType="touchUpInside" id="7qZ-S1-dru"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgK-B3-3dB">
-                                                <rect key="frame" x="210" y="378" width="119" height="77"/>
-                                                <state key="normal" backgroundImage="twittershare.png">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fgK-B3-3dB">
+                                                <rect key="frame" x="186" y="403" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="twitter.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -442,9 +444,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fbshare.png" width="200" height="128"/>
+        <image name="fb_icon.png" width="150" height="150"/>
         <image name="ic_search.png" width="72" height="72"/>
-        <image name="twittershare.png" width="200" height="128"/>
+        <image name="twitter.png" width="150" height="150"/>
         <image name="web_hi_res_512.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

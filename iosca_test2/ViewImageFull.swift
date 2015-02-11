@@ -248,7 +248,7 @@ class ViewImageFull: UIViewController,UIActionSheetDelegate,UIAlertViewDelegate 
     func fullimg()
     {
         _fullImg.hidden = true;
-        _imagetitle.hidden = true
+//        _imagetitle.hidden = true
         _temptitlelable.hidden = true
         _activity.startAnimating()
         println("Enter FullView func")
@@ -259,15 +259,38 @@ class ViewImageFull: UIViewController,UIActionSheetDelegate,UIAlertViewDelegate 
                     
                     var url:String = "https://farm\(self.fullsize.farm).staticflickr.com/\(self.fullsize.server)/\(self.fullsize.photoID)_\(val)_o.jpg";
                     println(url)
-                    let imageData:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
                     
-                    let image:UIImage = UIImage(data: imageData)!
-                    self._fullImg.image = image
-                    self._imagetitle.text = self.fullsize.title
-                    self._fullImg.hidden = false
-                    self._imagetitle.hidden = false
-                    self._temptitlelable.hidden = false
-                    self._activity.stopAnimating()
+                    let que:dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+                    dispatch_async(que, {
+                        
+                        var error:NSError?
+                        let imageData:NSData = NSData(contentsOfURL: NSURL(string: url)!, options: nil, error: &error)!
+                        
+                        if(error == nil)
+                        {
+                            let imag:UIImage = UIImage(data: imageData)!
+                            dispatch_async(dispatch_get_main_queue(), {
+                                let image:UIImage = UIImage(data: imageData)!
+                                self._fullImg.image = image
+                                self._imagetitle.text = self.fullsize.title
+                                self._fullImg.hidden = false
+                                self._imagetitle.hidden = false
+                                self._temptitlelable.hidden = false
+                                self._activity.stopAnimating()
+                                
+                            })
+                        }
+                        
+                    })
+//                    let imageData:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
+                    
+//                    let image:UIImage = UIImage(data: imageData)!
+//                    self._fullImg.image = image
+//                    self._imagetitle.text = self.fullsize.title
+//                    self._fullImg.hidden = false
+//                    self._imagetitle.hidden = false
+//                    self._temptitlelable.hidden = false
+//                    self._activity.stopAnimating()
                 })
             }
             else
@@ -283,8 +306,8 @@ class ViewImageFull: UIViewController,UIActionSheetDelegate,UIAlertViewDelegate 
     ///// LOADING MEDIUM SIZE IMAGE iF LARGE NOT AVAILABLE
     
     func loadimg(){
-        _fullImg.hidden = true;
-        _activity.startAnimating()
+//        _fullImg.hidden = true;
+//        _activity.startAnimating()
         println("Enter func")
         let searchURL:String = GetImages.downloadPhoto(fullsize, size: "m")
         println(searchURL);
@@ -294,6 +317,9 @@ class ViewImageFull: UIViewController,UIActionSheetDelegate,UIAlertViewDelegate 
         let image:UIImage = UIImage(data: imageData)!
         _fullImg.image = image
         _fullImg.hidden = false
+        self._imagetitle.text = self.fullsize.title
+//        _imagetitle.hidden = false
+        _temptitlelable.hidden = false
         _activity.stopAnimating()
         
     }

@@ -29,7 +29,7 @@ class NextView: UIViewController,UITableViewDataSource,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        _temp.text = toPass;
+        _temp.text = "\""+toPass+"\"";
         _imagetablview.delegate = self
         noimage =  UIAlertView(title: "Sorry", message: "No image for key \(self.toPass)", delegate: nil, cancelButtonTitle: "OK")
         loadimg()
@@ -40,7 +40,7 @@ class NextView: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func loadimg(){
         activity.startAnimating()
         println("Enter func")
-        img_obj.loadimageforstring("s",searchstring:_temp.text!, completion: { (searchString:String!,arrayPhotos:NSMutableArray!, error:NSError!) -> () in
+        img_obj.loadimageforstring("s",searchstring:toPass, completion: { (searchString:String!,arrayPhotos:NSMutableArray!, error:NSError!) -> () in
             
             if (error == nil){
                 if(arrayPhotos.count > 0)
@@ -103,7 +103,7 @@ class NextView: UIViewController,UITableViewDataSource,UITableViewDelegate {
         if(indexPath.row % 2 == 0 )
         {
             cell.backgroundColor = UIColorFromRGB(0xB2DFEE)
-            cell.image_title.textColor = UIColor.whiteColor()
+            cell.image_title.textColor = UIColor.grayColor()
         }
         else
         {
